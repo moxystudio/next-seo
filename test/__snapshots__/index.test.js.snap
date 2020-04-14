@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Seo Component should render correctly with props 1`] = `
+<Component>
+  <title
+    key="title"
+  >
+    test title
+  </title>
+  <meta
+    content="test description"
+    key="name_description"
+    name="description"
+  />
+  <meta
+    content="test title"
+    key="property_og:title"
+    property="og:title"
+  />
+  <meta
+    content="test name"
+    itemprop="name"
+    key="itemprop_name"
+  />
+  <meta
+    content="30"
+    http-equiv="content-type"
+    key="http-equiv_content-type"
+  />
+  <meta
+    content="test description"
+    key="name_description#property_og:description"
+    name="description"
+    property="og:description"
+  />
+  <meta
+    foo="bar"
+    key="4fzzzxrvu"
+  />
+  <link
+    href="/favicon.ico"
+    key="rel_icon#href_/favicon.ico"
+    rel="icon"
+  />
+  <link
+    href="/styles.css"
+    key="rel_stylesheet#href_/styles.css"
+    rel="stylesheet"
+  />
+</Component>
+`;

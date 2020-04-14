@@ -1,0 +1,64 @@
+{
+  "name": "@moxy/next-seo",
+  "version": "0.0.0",
+  "description": "SEO for Next.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "homepage": "https://github.com/moxystudio/next-seo#readme",
+  "author": "Paulo Marcos <paulo.marcos@moxy.studio>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moxystudio/next-seo.git"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "next.js",
+    "seo",
+    "head"
+  ],
+  "bugs": {
+    "url": "https://github.com/moxystudio/next-seo/issues"
+  },
+  "scripts": {
+    "build:commonjs": "BABEL_ENV=commonjs babel src -d lib --delete-dir-on-start",
+    "build:es": "BABEL_ENV=es babel src -d es --delete-dir-on-start",
+    "build": "npm run build:commonjs && npm run build:es",
+    "test": "jest",
+    "lint": "eslint --ignore-path .gitignore .",
+    "prerelease": "npm t && npm run lint && npm run build",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin HEAD && npm publish"
+  },
+  "peerDependencies": {
+    "next": "^9.2.0",
+    "react": "^16.8.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@moxy/babel-preset": "^3.2.1",
+    "@moxy/eslint-config": "^10.1.0",
+    "@moxy/jest-config": "^2.0.0",
+    "classnames": "^2.2.6",
+    "commitlint": "^8.3.5",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.0.0",
+    "husky": "^4.0.10",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.2",
+    "next": "^9.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "standard-version": "^7.0.0"
+  }
+}
