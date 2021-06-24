@@ -1,6 +1,6 @@
 {
   "name": "@moxy/next-seo",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "SEO for Next.js",
   "main": "lib/index.js",
   "module": "es/index.js",
